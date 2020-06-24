@@ -168,7 +168,6 @@ h1 {
     height: 400px;
     color: #270A79;
     text-align: center;
-    border: solid red 1px;
 }
 .heading {
     margin-top: 70px;
@@ -193,7 +192,6 @@ ul {
   color: white;
   text-align: center;
   padding: 80px;
-  border: solid red 1px;
 }
 .heading3 {
     margin-top: 0px;
@@ -210,7 +208,6 @@ ul {
 .spisok2 {
     list-style: none;
     font-size: 12pt;
-    
     padding-left: 10px;
     margin-left: 10px;
 }
@@ -220,7 +217,6 @@ ul {
     background-color: white;
     color: #270A79;
     padding: 60px;
-    border: solid red 1px;
 }
 
 
@@ -228,8 +224,7 @@ ul {
     background-color: #270A79;
     color: white;
     padding: 80px;
-    text-align: left; 
-    border: solid red 1px;
+    text-align: left;
 }
 body>footer>section:nth-child(1){
     display: flex;
@@ -258,12 +253,13 @@ body>footer>section>div>p>a:hover {
 <body>
 
 <header>
-    <nav class="navigation">
+    <nav class="navigation">  
         <ul>
-            <li><a href="#">ГЛАВНАЯ</a></li>
-            <li><a href="#">ОБО МНЕ</a></li>
-            <li><a href="#">УСЛУГИ</a></li>
-            <li><a href="#">ОБРАТНАЯ СВЯЗЬ</a></li>
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li><a href="#t1">ОБО МНЕ</a></li>
+            <li><a href="services.html">УСЛУГИ</a></li>
+            <li><a href="articles.html">СТАТЬИ</a></li>
+            <li><a href="#t2">ОБРАТНАЯ СВЯЗЬ</a></li>
         </ul>
         <a class="nomber" href="tel:+375298526651">+375 (29) 852 66 51</a>
     </nav>
@@ -277,8 +273,8 @@ body>footer>section>div>p>a:hover {
   
     <nav class="navigation">
         <ul>
-            <li><a href="#">Записаться</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#t2">Записаться</a></li>
+            <li><a href="#t2">Контакты</a></li>
         </ul>
     </nav>
     <br>
@@ -346,7 +342,7 @@ body>footer>section>div>p>a:hover {
     </section>
 
     <section class="blok4">
-        <h2 class="heading3">ОБО МНЕ</h2>
+        <h2 class="heading3"; id="t1">ОБО МНЕ</h2>
   
         <div style="padding-top: 10px;">
             <img src="images/image.jpg" alt="Фото" title="Valentina Dudinskay"; style='cursor: pointer; float: right; margin: 0px 30px;'width="360" height="453">
@@ -368,7 +364,7 @@ body>footer>section>div>p>a:hover {
 <footer>
     <section class="blok5">
         <div>
-            <h2 style="padding-bottom: 60px;">КОНТАКТЫ</h2>
+            <h2 style="padding-bottom: 60px;"; id="t2">КОНТАКТЫ</h2>
             <h3>Валентина Дудинская</h3>
 
             <p style="margin-left: 0;">&#9993; <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank">valentina14dudinskaya@gmail.com</a></p>
@@ -405,8 +401,8 @@ body>footer>section>div>p>a:hover {
 
                 <label class="mr-sm-2 mb-0" for="text">Текст сообщения</label>
                 <input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="text" name="text">
-  
-                <button  type="submit" class="btn btn-primary mt-2 mt-sm-0">Отправить</button>
+                <br>
+                <button type="submit" class="btn btn-primary mt-2 mt-sm-0">Отправить</button>
             </form>
         </div>
 
@@ -418,7 +414,7 @@ body>footer>section>div>p>a:hover {
   
     <section class="blok6">
         <h3>Режим работы: пн-сб 8:00-20:00 </h3>
-        <p><a href="#">Договор публичной оферты</a></p>
+        <p><a href="contract.html">Договор публичной оферты</a></p>
         <p><a href="#">Оплата</a></p>
         
         <p>ИП Дудинская Валентина Геннадьевна, УНП 193143397</p>

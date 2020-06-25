@@ -3,39 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Выпускной проект 3</title>
+    <title>Психолог - Валентина Дудинская</title>
+    <link rel="icon" href="images/icon.png" type="icon/png">
 </head>
+<style>
+    .fonWhite {
+        background-color: white;
+        height: 100px;
+    }
+    
+    .fon2 {
+        background: url(images/fon2.jpg) no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+    
+    
+    .navigation ul {
+        list-style: none; /*убираем маркеры списка*/
+        margin-top: 0px; /*делаем отступ сверху*/
+        padding-top: 40px;
+    }
+    .navigation li {
+        float:left; /*Размещаем список горизонтально для реализации меню*/
+        margin-left: 30px;
+        margin-right: 30px; /*Добавляем отступ у пунктов меню*/
+      }
+    .navigation a {
+        text-decoration: none; /*убираем подчеркивание текста ссылок*/
+        background:#4E2BB4; /*добавляем фон к пункту меню*/
+        color:#fff; /*меняем цвет ссылок*/
+        padding: 10px; /*добавляем отступ*/
+        font-family: arial; /*меняем шрифт*/
+        border-radius: 4px; /*добавляем скругление*/
+        transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    }
+    .navigation a:hover {
+        background:#1C85BB;/*добавляем эффект при наведении*/
+        text-decoration: none;
+    }
+    .nomber {
+        float: right;
+        margin-top: -29px;
+        margin-right: 60px;
+    }
+    
+    body>header>section>p {
+        margin-left: 70px;
+        margin-top: 0px; /*делаем отступ сверху*/
+        padding-top: 200px;
+        color: white;
+        font-family: Verdana, Arial, Helvetica, sans-serif; 
+        font-size: 11pt; /* Размер шрифта в пунктах */ 
+        word-spacing: 1mm;
+    }
+    
+    .wrapper {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 550px;
+    }
+    .wrapper ul {
+            list-style: none;
+    }
+    .wrapper ul li {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            margin: 30px 10px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 5px solid #7d93f3;
+            float: left;
+            transition: all 0.5s ease;
+    }
+    .wrapper ul li .fa {
+            color: #7d93f3;
+            margin-top: 20px;
+            transition: all 0.5s ease;
+    }
+    .wrapper ul li:hover.facebook {
+            border: 5px solid #3b5998;
+            box-shadow: 0 0 15px #3b5998;
+            transition: all 0.5s ease;
+    }
+    .wrapper ul li:hover .fa-facebook {
+            color: #3b5998;
+            text-shadow: 0 0 15px #3b5998;
+            transition: all 0.5s ease;
+    }
+    /*twitter*/
+    .wrapper ul li:hover.twitter {
+            border: 5px solid #00aced;
+            box-shadow: 0 0 15px #00aced;
+            transition: all 0.5s ease;
+    }
+    .wrapper ul li:hover .fa-twitter {
+            color: #00aced;
+            text-shadow: 0 0 15px #00aced;
+            transition: all 0.5s ease;
+    }
+    /* instagram */
+    .wrapper ul li:hover.instagram {
+            border: 5px solid #bc2a8d;
+            box-shadow: 0 0 15px #bc2a8d;
+            transition: all 0.5s ease;
+    }
+    .wrapper ul li:hover .fa-instagram {
+            color: #bc2a8d;
+            text-shadow: 0 0 15px #bc2a8d;
+            transition: all 0.5s ease;
+    }
+    @media screen and (max-width: 640px){
+    .wrapper {
+            width: 350px;
+    }
+    .wrapper ul li{
+            margin-top: 10px;
+    }
+    }
+    @media screen and (max-width: 340px){
+    .wrapper {
+            width: 150px;
+    }
+    .wrapper ul li{
+            margin:15px;
+    }
+    }
+    
+    @media screen and (max-width: 675px) {
+    .navigation ul {
+            padding-top: 0;
+        }
+    .navigation li {
+            float: none;
+            padding-top: 45px;
+        }
+    .nomber {
+            margin-top: -260px;
+            margin-right: 60px;
+        }
+    
+    }
+        
+    @media screen and (min-width: 675px) and (max-width: 1199px) {
+    .navigation ul {
+            padding-top: 0;
+        }
+    .navigation li {
+            float: none;
+            padding-top: 45px;
+        }
+    .nomber {
+            margin-top: -260px;
+            margin-right: 60px;
+        }
+    }
+
+
+    .blok5 {
+        background-color: #270A79;
+        color: white;
+        padding: 80px;
+        text-align: left; 
+        border: solid red 1px;
+    }
+    body>footer>section:nth-child(1){
+        display: flex;
+    }
+
+    body>footer>section>div>p>a {
+        color: white; /* Белый цвет ссылок */
+        text-decoration: none; /* Отмена подчеркивания ссылки */
+        transition: 2s; /* Время изменения */
+    }
+
+    body>footer>section>div>p>a:hover { 
+        color: red; /* Цвет ссылки при наведении */
+        text-decoration: none; /* Отмена подчеркивания ссылки */
+    }
+
+
+    .blok6 {
+        color: #270A79;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    main>h2 {
+        color: #270A79;
+        text-align: center;
+        margin-top: 60px;
+    }
+    body>main>ul {
+        display: inline-block;
+        color: #270A79;
+        margin-left: 200px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+</style>
+
+
 <body>
-    <section>
+    <header>
+        <section class="fonWhite">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="index.html#t1">ОБО МНЕ</a></li>
+                    <li><a href="services.html">УСЛУГИ</a></li>
+                    <li><a href="articles.html">СТАТЬИ</a></li>
+                    <li><a href="#t2">ОБРАТНАЯ СВЯЗЬ</a></li>
+                </ul>
+                <a class="nomber" href="tel:+375298526651">+375 (29) 852 66 51</a>
+            </nav>
+        </section>
+        
+        <section class="fon2">
+            <p><strong>Мы сами создаем свои переживания,<br>а значит нам по силам с ними справится.</strong></p>
+        </section>
+    </header>
+
+    <main>
         <h2>СТАТЬИ</h2>
         <ul>
-            <li>Паническая атака</li>
-            <li>Психологическая диагностика</li>
-            <li>Психологическая поддержка</li>
-            <li>9 способов остаться одинокой</li>
-            <li>Самопомощь при панической атаке</li>
-            <li>О смысле жизни</li>
-            <li>Когда полезен стресс?</li>
-            <li>Поговорим про лень</li>
-            <li>Анализ сновидений</li>
-            <li>Симптомы при депрессии</li>
-            <li>Самопомощь при депрессии</li>
-            <li>Мотивация не работает</li>
-            <li>Психолог. Психотерапевт. Психиатр</li>
-            <li>Психотерапевт?</li>
-            <li>Когда нужен психолог</li>
-            <li>Фобия</li>
-            <li>Неврастения</li>
-            <li>Мифы о психологах</li>
-            <li>Нарциссизм</li>
-            <li>Польза медитации</li>
+            <li><a href="#">Паническая атака</a></li>
+            <li><a href="#">Психологическая диагностика</a></li>
+            <li><a href="#">Психологическая поддержка</a></li>
+            <li><a href="#">9 способов остаться одинокой</a></li>
+            <li><a href="#">Самопомощь при панической атаке</a></li>
+            <li><a href="#">О смысле жизни</a></li>
+            <li><a href="#">Когда полезен стресс?</a></li>
+            <li><a href="#">Поговорим про лень</a></li>
+            <li><a href="#">Анализ сновидений</a></li>
+            <li><a href="#">Симптомы при депрессии</a></li>
+        </ul> 
+        <ul> 
+            <li><a href="#">Самопомощь при депрессии</a></li>
+            <li><a href="#">Мотивация не работает</a></li>
+            <li><a href="#">Психолог. Психотерапевт. Психиатр</a></li>
+            <li><a href="#">Психотерапевт?</a></li>
+            <li><a href="#">Когда нужен психолог</a></li>
+            <li><a href="#">Фобия</a></li>
+            <li><a href="#">Неврастения</a></li>
+            <li><a href="#">Мифы о психологах</a></li>
+            <li><a href="#">Нарциссизм</a></li>
+            <li><a href="#">Польза медитации</a></li>
         </ul>
+    </main>
 
 
-
-
-    </section>
-
-
+    <footer>
+        <section class="blok5">
+            <div>
+                <h2 style="padding-bottom: 60px;"; id="t2">КОНТАКТЫ</h2>
+                <h3>Валентина Дудинская</h3>
+    
+                <p style="margin-left: 0;">&#9993; <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank">valentina14dudinskaya@gmail.com</a></p>
+                <p style="margin-left: 0;">&#x260E; <a href="tel: +375 (29) 852 66 51">+375 (29) 852 66 51</a></p>
+                <p style="margin-left: 0;"> Viber, Telegram, WhatsApp</p>
+    
+    
+            <!-- Криво выводит иконки на страницу -->
+                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+                <div class="wrapper">
+                    <ul>
+                        <li class="facebook"><a href="https://www.facebook.com/valentina.dydinskaya" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="twitter"><a href="https://twitter.com/explore" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="instagram"><a href="https://www.instagram.com/psy_dudinskaya/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+            <div style="margin-left: 90px;">
+                <h2 class="heading3">СООБЩЕНИЕ</h2>
+      
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+                <form class="form-inline-block">
+        
+                    <label class="mr-sm-2 mb-0" for="first_name">Имя</label>
+                    <input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="first_name" name="first_name">
+        
+                    <label class="mr-sm-2 mb-0" for="Email">Email</label>
+                    <input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="email" name="email">
+    
+                    <label class="mr-sm-2 mb-0" for="text">Тема</label>
+                    <input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="text" name="text">
+    
+                    <label class="mr-sm-2 mb-0" for="text">Текст сообщения</label>
+                    <input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="text" name="text">
+                    <br>
+                    <button  type="submit" class="btn btn-primary mt-2 mt-sm-0">Отправить</button>
+                </form>
+            </div>
+    
+            <div style="margin-left: 90px;">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A557a803416b5756e15a927c91ac85b054ebbc9cda64128870b4d098887ea9b21&amp;width=500&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </section>
+      
+      
+        <section class="blok6">
+            <h3>Режим работы: пн-сб 8:00-20:00 </h3>
+            <p><a href="contract.html">Договор публичной оферты</a></p>
+            <p><a href="payment.html">Оплата</a></p>
+            
+            <p>ИП Дудинская Валентина Геннадьевна, УНП 193143397</p>
+            <p>Cвидетельство о регистрации №0702067, от 01.10.2018 (минский горисполком)</p>
+      
+            <img src="images/card1.png" alt="Банковская карта" title="VISA"; style="cursor: pointer">
+            <img src="images/card2.png" alt="Банковская карта"title="MasterCard"; style="cursor: pointer">
+            <img src="images/card3.png" alt="Банковская карта" title="Maestro"; style="cursor: pointer">
+            <img src="images/card4.png" alt="Банковская карта" title="PayPal"; style="cursor: pointer">
+            <img src="images/card5.png" alt="Банковская карта" title="WorldPay"; style="cursor: pointer">
+        </section>
+      </footer>
 </body>
 </html>

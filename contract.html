@@ -9,9 +9,7 @@
 <style>
     .fonWhite {
         background-color: white;
-        
         height: 100px;
-       
     }
     
     .fon2 {
@@ -19,7 +17,6 @@
         background-size: cover;
         height: 300px;
     }
-    
     
     .navigation ul {
         list-style: none; /*убираем маркеры списка*/
@@ -52,47 +49,18 @@
     
     body>header>section>p {
         margin-left: 70px;
-        margin-top: 0px; /*делаем отступ сверху*/
+        margin-top: 0px; 
         padding-top: 200px;
         color: white;
         font-family: Verdana, Arial, Helvetica, sans-serif; 
-        font-size: 11pt; /* Размер шрифта в пунктах */ 
+        font-size: 11pt;
         word-spacing: 1mm;
     }
     
-    @media screen and (max-width: 675px) {
-    .navigation ul {
-            padding-top: 0;
-        }
-    .navigation li {
-            float: none;
-            padding-top: 45px;
-        }
-    .nomber {
-            margin-top: -260px;
-            margin-right: 60px;
-        }
-    
-    }
-        
-    @media screen and (min-width: 675px) and (max-width: 1199px) {
-    .navigation ul {
-            padding-top: 0;
-        }
-    .navigation li {
-            float: none;
-            padding-top: 45px;
-        }
-    .nomber {
-            margin-top: -260px;
-            margin-right: 60px;
-        }
-    }
-
     main {
-margin-top: 60px;
-margin-left: 60px;
-margin-right: 60px;
+        margin-top: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
     }
     main>h2 {
         text-align: center;       
@@ -102,8 +70,114 @@ margin-right: 60px;
         padding-left: 10px;
     }
 
-</style>
+    .heading3 {             
+        margin-top: 0px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
 
+    .blok5 {
+        background-color: #270A79;
+        color: white;
+        padding: 80px;
+        text-align: left; 
+    }
+
+    body>footer>section:nth-child(1){
+        display: flex;
+    }
+
+    body>footer>section>div>p>a {
+        color: white;
+        text-decoration: none;
+        transition: 2s; /* Время изменения */
+    }
+
+    body>footer>section>div>p>a:hover { 
+        color: red;
+        text-decoration: none;
+    }
+
+    .socialIcons {    /* Иконки для соцсетей */
+        margin-top: 20px;
+        margin-left: -40px;
+        ist-style: none;
+    }
+    .socialIcons li {
+        display: inline-block;
+    }
+    .socialIcons li a {
+        display: inline-block;
+        font-size: 3rem;
+        width: 60px;
+        line-height: 100px;
+        color: white;
+        transition: all .5s ease;
+        transform-origin: left;
+        transform: rotateY(-30deg);
+        text-shadow: 10px 0px 1px #131313, 10px 0px 1px #070707, 10px 0px 1px black, 10px 0px 1px black;
+    }
+    .socialIcons li a:hover {
+        color: rgb(241, 63, 63);
+        transform: rotate(0deg);
+        text-shadow: 0px 0px 1px #131313, 0px 0px 1px #070707, 0px 0px 1px black, 0px 0px 1px black;
+    }
+    .blok6 {
+        color: #270A79;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    main>h2 {
+        text-align: center;
+    }
+    body>main>ul {
+        display: inline-block;
+        color: #270A79;
+        margin-left: 200px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    @media screen and (max-width: 767px) {          /* Медиазапросы */
+    body>header>section>p {
+        display: none;
+    }
+    .navigation ul {
+        padding-top: 0;
+    }
+    .navigation li {
+        float: none;
+        padding-top: 45px;
+        margin-bottom: -10px;
+    }
+    .nomber {
+        margin-top: -275px;
+        margin-right: 30px;
+    }
+}    
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .navigation ul {
+        padding-top: 0;
+    }
+    .navigation li {
+        float: none;
+        padding-top: 45px;
+    }
+    .nomber {
+        margin-top: -330px;
+        margin-right: 60px;
+    }
+    body>header>section>p {
+        display: none;
+}
+    .nomber {
+        margin-top: -330px;
+        margin-right: 60px;
+    }
+}  
+</style>
 <body>
     <header>
         <section class="fonWhite">
@@ -123,9 +197,6 @@ margin-right: 60px;
             <p><strong>Мы сами создаем свои переживания,<br>а значит нам по силам с ними справится.</strong></p>
         </section>
     </header>
-
-
-
 
 
     <main>
@@ -195,10 +266,68 @@ margin-right: 60px;
         </ol>
     </main>
 
-
-
-
-
-
+    <footer>
+        <section class="blok5">
+            <div>
+                <h2 style="padding-bottom: 60px;"; id="t2">КОНТАКТЫ</h2>
+                <h3>Валентина Дудинская</h3>
+    
+                <p style="margin-left: 0;">&#9993; <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank">valentina14dudinskaya@gmail.com</a></p>
+                <p style="margin-left: 0;">&#x260E; <a href="tel: +375 (29) 852 66 51">+375 (29) 852 66 51</a></p>
+                <p style="margin-left: 0;"> Viber, Telegram, WhatsApp</p>
+    
+    
+                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+            
+                <ul class="socialIcons">
+                    <li><a class="facebook" href="https://www.facebook.com/valentina.dydinskaya" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="https://twitter.com/explore" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="instagram" href="https://www.instagram.com/psy_dudinskaya" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+    
+            <div style="margin-left: 90px;">
+                <h2 class="heading3">СООБЩЕНИЕ</h2>
+      
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+                <form class="form-inline-block">
+        
+                    <label class="mr-sm-2 mb-0" for="first_name">Имя</label>
+                    <input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="first_name" name="first_name">
+        
+                    <label class="mr-sm-2 mb-0" for="Email">Email</label>
+                    <input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="email" name="email">
+    
+                    <label class="mr-sm-2 mb-0" for="text">Тема</label>
+                    <input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="text" name="text">
+    
+                    <label class="mr-sm-2 mb-0" for="text">Текст сообщения</label>
+                    <input type="text" class="form-control mr-sm-2 mb-2 mb-sm-0" id="text" name="text">
+                    <br>
+                    <button type="submit" class="btn btn-primary mt-2 mt-sm-0">Отправить</button>
+                </form>
+            </div>
+    
+            <div style="margin-left: 90px;">
+                <h2 class="heading3">КАРТА ПРОЕЗДА</h2>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A557a803416b5756e15a927c91ac85b054ebbc9cda64128870b4d098887ea9b21&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </section>
+      
+        <section class="blok6">
+            <h3>Режим работы: пн-сб 8:00-20:00 </h3>
+            <p><a href="contract.html">Договор публичной оферты</a></p>
+            <p><a href="payment.html">Оплата</a></p>
+            
+            <p>ИП Дудинская Валентина Геннадьевна, УНП 193143397</p>
+            <p>Cвидетельство о регистрации №0702067, от 01.10.2018 (минский горисполком)</p>
+      
+            <img src="images/card1.png" alt="Банковская карта" title="VISA"; style="cursor: pointer">
+            <img src="images/card2.png" alt="Банковская карта"title="MasterCard"; style="cursor: pointer">
+            <img src="images/card3.png" alt="Банковская карта" title="Maestro"; style="cursor: pointer">
+            <img src="images/card4.png" alt="Банковская карта" title="PayPal"; style="cursor: pointer">
+            <img src="images/card5.png" alt="Банковская карта" title="WorldPay"; style="cursor: pointer">
+        </section>
+      </footer>
 </body>
 </html>

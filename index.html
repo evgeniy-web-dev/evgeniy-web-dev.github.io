@@ -10,7 +10,8 @@ header {
     background: url(images/fon1.jpg) no-repeat;
     background-size: cover;
     height: 150vh;
-    min-width: 490px;
+    min-width: 767px;
+    min-height: 660px;
     color:#4E2BB4;
 }
 .navigation ul {
@@ -43,134 +44,25 @@ header {
 }
 body>header>h1 {
     margin-left: 70px;
-    margin-top: 130px; /*делаем отступ сверху*/
+    margin-top: 130px;
 }
 p {
     margin-left: 70px;
-    margin-top: 0px; /*делаем отступ сверху*/
+    margin-top: 0px; 
     font-family: Verdana, Arial, Helvetica, sans-serif; 
-    font-size: 11pt; /* Размер шрифта в пунктах */ 
-}
-
-.wrapper {
-        position: absolute;
-        top: 140%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 550px;
-}
-.wrapper ul {
-        list-style: none;
-}
-.wrapper ul li {
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
-        margin: 30px 10px;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 50%;
-        border: 5px solid #7d93f3;
-        float: left;
-        transition: all 0.5s ease;
-}
-.wrapper ul li .fa {
-        color: #7d93f3;
-        margin-top: 20px;
-        transition: all 0.5s ease;
-}
-.wrapper ul li:hover.facebook {
-        border: 5px solid #3b5998;
-        box-shadow: 0 0 15px #3b5998;
-        transition: all 0.5s ease;
-}
-.wrapper ul li:hover .fa-facebook {
-        color: #3b5998;
-        text-shadow: 0 0 15px #3b5998;
-        transition: all 0.5s ease;
-}
-/*twitter*/
-.wrapper ul li:hover.twitter {
-        border: 5px solid #00aced;
-        box-shadow: 0 0 15px #00aced;
-        transition: all 0.5s ease;
-}
-.wrapper ul li:hover .fa-twitter {
-        color: #00aced;
-        text-shadow: 0 0 15px #00aced;
-        transition: all 0.5s ease;
-}
-/* instagram */
-.wrapper ul li:hover.instagram {
-        border: 5px solid #bc2a8d;
-        box-shadow: 0 0 15px #bc2a8d;
-        transition: all 0.5s ease;
-}
-.wrapper ul li:hover .fa-instagram {
-        color: #bc2a8d;
-        text-shadow: 0 0 15px #bc2a8d;
-        transition: all 0.5s ease;
-}
-@media screen and (max-width: 640px){
-.wrapper {
-        width: 350px;
-}
-.wrapper ul li{
-        margin-top: 10px;
-}
-}
-@media screen and (max-width: 340px){
-.wrapper {
-        width: 150px;
-}
-.wrapper ul li{
-        margin:15px;
-}
-}
-
-@media screen and (max-width: 675px) {
-.navigation ul {
-        padding-top: 0;
-    }
-.navigation li {
-        float: none;
-        padding-top: 45px;
-    }
-.nomber {
-        margin-top: -260px;
-        margin-right: 60px;
-    }
-h1 {
-        margin-top: 50px;
-    }
-}
-    
-@media screen and (min-width: 675px) and (max-width: 1199px) {
-.navigation ul {
-        padding-top: 0;
-    }
-.navigation li {
-        float: none;
-        padding-top: 45px;
-    }
-.nomber {
-        margin-top: -260px;
-        margin-right: 60px;
-    }
-h1 {
-        margin-top: 50px;
-    }
+    font-size: 11pt;
 }
 
 
-.blok2 {
+.blok2 {               /* main / Я ПОМОГУ ЕСЛИ У ВАС */
     background-color: white;
     height: 400px;
     color: #270A79;
     text-align: center;
 }
 .heading {
-    margin-top: 70px;
+    
+
     text-align: center;
 }
 body>main>section>ul {
@@ -186,29 +78,27 @@ ul {
 }
 
 
-
-.blok3 {
+.blok3 {                /* main / ВАРИАНТЫ РАБОТЫ */
   background-color: #270A79;
   color: white;
   text-align: center;
   padding: 80px;
 }
-.heading3 {
+.heading3 {             
     margin-top: 0px;
     margin-bottom: 60px;
     text-align: center;
 }
 
 
-
-.blok4 {
+.blok4 {                 /* main / ОБО МНЕ */
     background-color: white;
     color: #270A79;
     padding: 60px;
 }
 
 
-.blok5 {
+.blok5 {                 /* Подвал / контакты */
     background-color: #270A79;
     color: white;
     padding: 80px;
@@ -219,23 +109,123 @@ body>footer>section:nth-child(1){
  }
 
  body>footer>section>div>p>a {
-    color: white; /* Белый цвет ссылок */
-    text-decoration: none; /* Отмена подчеркивания ссылки */
-    transition: 2s; /* Время изменения */
+    color: white;
+    text-decoration: none;
+    transition: 2s;
     }
 
 body>footer>section>div>p>a:hover { 
-    color: red; /* Цвет ссылки при наведении */
-    text-decoration: none; /* Отмена подчеркивания ссылки */
+    color: red;
+    text-decoration: none;
     }
 
 
-.blok6 {
+.socialIcons {    /* Иконки для соцсетей */
+    margin-top: 20px;
+    margin-left: -40px;
+    list-style: none;
+    }
+.socialIcons li {
+    display: inline-block;
+    }
+.socialIcons li a {
+    display: inline-block;
+    font-size: 3rem;
+    width: 60px;
+    line-height: 100px;
+    color: white;
+    transition: all .5s ease;
+    transform-origin: left;
+    transform: rotateY(-30deg);
+    text-shadow: 10px 0px 1px #131313, 10px 0px 1px #070707, 10px 0px 1px black, 10px 0px 1px black;
+    }
+.socialIcons li a:hover {
+    color: rgb(241, 63, 63);
+    transform: rotate(0deg);
+    text-shadow: 0px 0px 1px #131313, 0px 0px 1px #070707, 0px 0px 1px black, 0px 0px 1px black;
+    }
+
+
+.blok6 {                /* Подвал / Режим работы */
     color: #270A79;
     text-align: center;
     padding-top: 40px;
 }
 
+
+@media screen and (max-width: 767px) {          /* Медиазапросы */
+    header {
+        background: url(images/fon1.jpg) no-repeat;
+        background-size: contain;
+        height: 90vh;
+    }
+    body>header>h1 {
+        margin-left: 70px;
+        margin-top: 0px; 
+    }
+    body>header>p {
+        display: none;
+    }
+    .navigation ul {
+        padding-top: 0;
+    }
+    .navigation li {
+        float: none;
+        padding-top: 45px;
+        margin-bottom: -10px;
+    }
+    .nomber {
+        display: none;
+    }
+
+    main {
+        text-align: center;
+    }
+    body>main>section:nth-child(1) {
+        display: none;
+    }
+    img {
+        display: none;
+    }
+    .blok4 {          
+        padding: 0px;
+    }
+}    
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .navigation ul {
+        padding-top: 0;
+    }
+.navigation li {
+        float: none;
+        padding-top: 45px;
+    }
+.nomber {
+        margin-top: -330px;
+        margin-right: 60px;
+    }
+    h1 {
+        margin-top: 50px;
+    }
+    img {
+        display: none;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .navigation ul {
+        padding-top: 0;
+    }
+    .navigation li {
+        float: none;
+        padding-top: 45px;
+    }
+    .nomber {
+        margin-top: -330px;
+        margin-right: 60px;
+    }
+    h1 {
+        margin-top: 50px;
+    }
+}  
 </style>
 </head>
 <body>
@@ -265,17 +255,6 @@ body>footer>section>div>p>a:hover {
             <li><a href="#t2">Контакты</a></li>
         </ul>
     </nav>
-    <br>
-     
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  
-    <div class="wrapper">
-        <ul>
-            <li class="facebook"><a href="https://www.facebook.com/valentina.dydinskaya" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li class="twitter"><a href="https://twitter.com/explore" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/psy_dudinskaya/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-        </ul>
-    </div>
 </header>
 
 
@@ -283,52 +262,48 @@ body>footer>section>div>p>a:hover {
     <section class="blok2">
         <h1 class="heading">Я ПОМОГУ, ЕСЛИ У ВАС:</h1>
         <ul>
-          <ul>
-              <li>панические атаки</li>
-              <li>тревоги</li>
-              <li>страх смерти</li>
-              <li>тревога о здоровье</li>
-          </ul>
-  
-          <ul>
-              <li>депрессия</li>
-              <li>низкая самооценка</li>
-              <li>психосоматика</li>
-              <li>ОКР, РПП <br> (психогенное переедание, <br>нервная булимия)</li>
-          </ul>
-  
-          <ul>
-              <li>потеря жизненного смысла</li>
-              <li>бесцельность жизни</li>
-              <li>жизненные кризисы</li>
-              <li>утрата близкого человека</li>
-        </ul>
+            <ul>
+                <li>панические атаки</li>
+                <li>тревоги</li>
+                <li>страх смерти</li>
+                <li>тревога о здоровье</li>
+            </ul>
+            <ul>
+                <li>депрессия</li>
+                <li>низкая самооценка</li>
+                <li>психосоматика</li>
+                <li>ОКР, РПП <br> (психогенное переедание, <br>нервная булимия)</li>
+            </ul>
+            <ul>
+                <li>потеря жизненного смысла</li>
+                <li>бесцельность жизни</li>
+                <li>жизненные кризисы</li>
+                <li>утрата близкого человека</li>
+            </ul>
       </ul>
     </section>
 
     <section class="blok3">
         <h1 class="heading3">ВАРИАНТЫ РАБОТЫ</h1>
-  
-    <!-- Выровнять -->
-    <div>
         <div>
-            <h3>Первичная консультация</h3>
+            <div>
+                <h3>Первичная консультация</h3>
                 <p>Бывает такое, что Вы не знаете что с Вами, или не можете обозначить<br> конкретную проблему. Здесь поможет первичная консультация.</p>
-        </div>
-        <div>   
-            <h3>Психологическая диагностика</h3>
+            </div>
+            <div>   
+                <h3>Психологическая диагностика</h3>
                 <p>Результаты психодиагностики помогут узнать особенности Вашей личности,<br> характера и темпераметра, особенности когнитивиной сферы - интеллекта, памяти, внимания и т. д.</p>  
-        </div>
+            </div>
 
-        <div>
-            <h3>Курс до 10 встреч</h3>
+            <div>
+                <h3>Курс до 10 встреч</h3>
                 <p>Если Вы ищите психологическую поддержку в сложной жизненной ситуации или<br> переживаете кризис (развод, болезнь), то Вам рекомендуется пройти курс краткосрочного консультирования.</p>
-        </div>
-        <div>
-            <h3>Курс от 10 встреч</h3>
+            </div>
+            <div>
+                <h3>Курс от 10 встреч</h3>
                 <p>Иногда проблема имеет хронический характер, формируется еще в детстве.<br> В таких случаях Вы можете обратиться за терапией от 10 встреч.</p>
-        </div>
-    </div>   
+            </div>
+        </div>   
     </section>
 
     <section class="blok4">
@@ -337,7 +312,7 @@ body>footer>section>div>p>a:hover {
         <div style="padding-top: 10px;">
             <img src="images/image.jpg" alt="Фото" title="Valentina Dudinskay"; style='cursor: pointer; float: right; margin: 0px 30px;'width="360" height="453">
             <p>Я <strong>клинический психолог</strong> и <strong>экзистенциальный терапевт</strong>. Живу и работаю в Минске.<br><br>
-            strong>Образование:</strong> БГУ, факультет философии и социальных наук,
+            <strong>Образование:</strong> БГУ, факультет философии и социальных наук,
             кафедра психологии. Специальность: психолог, преподаватель психологии. Специализция: медицинский психолог.<br>
             Психотерапевтические курсы по экзистенциальной терапии.<br><br>
             <strong>Профессиональный опыт:</strong> Работаю клиническим психологом в медицинском учреждении здравоохранения, являюсь консультантом на телефоне доверия. Занимаюсь индивидуальным консультированием, веду групповую терапию. Так же имею практический опыт работы с подростками.<br><br>
@@ -362,16 +337,13 @@ body>footer>section>div>p>a:hover {
             <p style="margin-left: 0;"> Viber, Telegram, WhatsApp</p>
 
 
-
-            <!-- Не выводит иконки на страницу -->
-            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-            <div class="wrapper">
-                <ul>
-                    <li class="facebook"><a href="https://www.facebook.com/valentina.dydinskaya" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="twitter"><a href="https://twitter.com/explore" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="instagram"><a href="https://www.instagram.com/psy_dudinskaya/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+            <ul class="socialIcons">
+                <li><a class="facebook" href="https://www.facebook.com/valentina.dydinskaya" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="https://twitter.com/explore" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/psy_dudinskaya" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
         </div>
 
 
@@ -398,13 +370,14 @@ body>footer>section>div>p>a:hover {
         </div>
 
         <div style="margin-left: 90px;">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A557a803416b5756e15a927c91ac85b054ebbc9cda64128870b4d098887ea9b21&amp;width=500&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+            <h2 class="heading3">КАРТА ПРОЕЗДА</h2>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A557a803416b5756e15a927c91ac85b054ebbc9cda64128870b4d098887ea9b21&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </section>
   
   
     <section class="blok6">
-        <h3>Режим работы: пн-сб 8:00-20:00 </h3>
+        <h3 style="margin-left: 80px">Режим работы: пн-сб 8:00-20:00 </h3>
         <p><a href="contract.html">Договор публичной оферты</a></p>
         <p><a href="payment.html">Оплата</a></p>
         
@@ -418,6 +391,5 @@ body>footer>section>div>p>a:hover {
         <img src="images/card5.png" alt="Банковская карта" title="WorldPay"; style="cursor: pointer">
     </section>
   </footer>
-    
 </body>
 </html>

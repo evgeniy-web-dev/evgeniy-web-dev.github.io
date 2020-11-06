@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Психолог - Валентина Дудинская</title>
-    <link rel="icon" href="images/icon.png" type="icon/png">
+    <link rel="icon" href="../images/icon.png" type="icon/png">
 </head>
 <style>
     .fonWhite {
@@ -13,32 +13,32 @@
     }
     
     .fon2 {
-        background: url(images/fon2.jpg) no-repeat;
+        background: url(../images/fon2.jpg) no-repeat;
         background-size: cover;
         height: 300px;
     }
     
     .navigation ul {
-        list-style: none; /*убираем маркеры списка*/
-        margin-top: 0px; /*делаем отступ сверху*/
+        list-style: none;
+        margin-top: 0px;
         padding-top: 40px;
     }
     .navigation li {
-        float:left; /*Размещаем список горизонтально для реализации меню*/
+        float:left; 
         margin-left: 30px;
-        margin-right: 30px; /*Добавляем отступ у пунктов меню*/
+        margin-right: 30px; 
       }
     .navigation a {
-        text-decoration: none; /*убираем подчеркивание текста ссылок*/
-        background:#4E2BB4; /*добавляем фон к пункту меню*/
-        color:#fff; /*меняем цвет ссылок*/
-        padding: 10px; /*добавляем отступ*/
-        font-family: arial; /*меняем шрифт*/
-        border-radius: 4px; /*добавляем скругление*/
-        transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+        text-decoration: none;
+        background:#4E2BB4; 
+        color:#fff; 
+        padding: 10px;
+        font-family: arial;
+        border-radius: 4px; 
+        transition: all 0.3s 0.01s ease; 
     }
     .navigation a:hover {
-        background:#1C85BB;/*добавляем эффект при наведении*/
+        background:#1C85BB;
         text-decoration: none;
     }
     .nomber {
@@ -47,6 +47,12 @@
         margin-right: 60px;
     }
     
+    .heading3 {             
+    margin-top: 0px;
+    margin-bottom: 60px;
+    text-align: center;
+    }
+
     body>header>section>p {
         margin-left: 70px;
         margin-top: 0px; /*делаем отступ сверху*/
@@ -56,24 +62,17 @@
         font-size: 11pt; /* Размер шрифта в пунктах */ 
         word-spacing: 1mm;
     }
-    
-    main {
-        margin-top: 60px;
-        margin-left: 60px;
-        margin-right: 60px;
-    }
+
     main>h2 {
-        text-align: center;       
-    }
-
-    main>ol {
-        padding-left: 10px;
-    }
-
-    .heading3 {             
-        margin-top: 0px;
-        margin-bottom: 60px;
+        color: #270A79;
         text-align: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    main>p {
+        color: #270A79;
+        padding: 0 50px 40px 70px;
     }
 
 
@@ -93,12 +92,12 @@
         color: white;
         text-decoration: none;
         transition: 1s;
-    }
+        }
 
     body>footer>section>div>p>a:hover { 
         color: red;
         text-decoration: none;
-    }
+        }
 
 
     .socialIcons {    /* Иконки для соцсетей */
@@ -132,18 +131,7 @@
         text-align: center;
         padding-top: 40px;
     }
-
-    main>h2 {
-        text-align: center;
-        margin-top: 60px;
-    }
-    body>main>ul {
-        display: inline-block;
-        color: #270A79;
-        margin-left: 200px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+   
 
     @media screen and (max-width: 767px) {          /* Медиазапросы */
         body>header>section>p {
@@ -162,7 +150,7 @@
             margin-right: 30px;
         }
     }    
-    @media screen and (min-width: 767px) and (max-width: 1074px) {
+    @media screen and (min-width: 767px) and (max-width: 991px) {
         .navigation ul {
             padding-top: 0;
         }
@@ -176,10 +164,25 @@
         }
         body>header>section>p {
             display: none;
+        }
+        main {
+            text-align: center;
+        }
     }
+    @media screen and (min-width: 991px) and (max-width: 1199px) {
+        .navigation ul {
+            padding-top: 0;
+        }
+        .navigation li {
+            float: none;
+            padding-top: 45px;
+        }
         .nomber {
             margin-top: -330px;
             margin-right: 60px;
+        }
+        body>header>section>p {
+            display: none;
         }
     }  
 </style>
@@ -188,10 +191,10 @@
         <section class="fonWhite">
             <nav class="navigation">
                 <ul>
-                    <li><a href="index.html">ГЛАВНАЯ</a></li>
-                    <li><a href="index.html#t1">ОБО МНЕ</a></li>
-                    <li><a href="services.html">УСЛУГИ</a></li>
-                    <li><a href="articles.html">СТАТЬИ</a></li>
+                    <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="../index.html#t1">ОБО МНЕ</a></li>
+                    <li><a href="../services.html">УСЛУГИ</a></li>
+                    <li><a href="../articles.html">СТАТЬИ</a></li>
                     <li><a href="#t2">ОБРАТНАЯ СВЯЗЬ</a></li>
                 </ul>
                 <a class="nomber" href="tel:+375298526651">+375 (29) 852 66 51</a>
@@ -203,37 +206,18 @@
         </section>
     </header>
 
-
     <main>
-        <h2>ОПЛАТА</h2>
-        <p>Прежде чем оплачивать, нужно связаться со мной и согласовать время оказания услуг.</p>
-        
-            <strong>Перевод денежных средств на расчетный счет в белорусских рублях</strong><br>
-            Получатель: ИП Дудинская Валентина Геннадьевна<br>
-            г. Минск<br>
-            УНП 193143397<br>
-            Банковские реквизиты:<br>
-            BY33UNBS30131456400000001933<br>
-            в ЗАО «БСБ Банк»<br>
-            код банка UNBSBY2X<br>
-            Назначение платежа: Оплата услуг согласно договору публичной оферты / ФИО плательщика<br>
-            Отправьте, пожалуйста, информацию о платеже (копию платежного документа) на:<br>
-            valentina14dudinskaya@gmail.com
-            или
-            +375 (29) 852 66 51 (viber, telegram).<br><br>
-        
-            <strong>Оплата банковской картой</strong><br>
-            1. Связаться со мной для согласования оказания услуги<br>
-            2. В оговоренный срок Вы получите ссылку для оплаты услуг на Ваш email. Кликнув на ссылку, Вы перейдете на специальную защищенную платежную страницу процессинговой системы bePaid<br>
-            3. На платежной странице будет указан номер заказа и сумма платежа. Для оплаты вам необходимо ввести свои карточные данные и подтвердить платеж, нажав кнопку "Оплатить".<br>
-            4. После оплаты я свяжусь с Вами для уточнения деталей оказания услуги<br><br>
-
-            Обращаю ваше внимание, что после проведения платежа на указанный вами электронный адрес придет подтверждение оплаты. Прошу Вас сохранять данные оплат.
-            Платежи принимаются по следующим банковским картам: Visa, Visa Electron, MasterCard, Maestro, Белкарт. 
-            Платежи по банковским картам осуществляются через систему электронных платежей bePaid (ссылка на сайт www.bepaid.by). Платежная страница системы bePaid отвечает всем требованиям безопасности передачи данных (PCI DSS Level 1). Все конфиденциальные данные хранятся в зашифрованном виде и максимально устойчивы к взлому.
-        
-            При оплате услуги банковской картой на сайте dudinskaya.by возврат осуществляется на карту, с которой была произведена оплата. Срок поступления денежных средств на карту - от 3 до 30 дней с момента осуществления возврата.
-        </p>
+        <h2>Нарциссизм</h2>
+        <p>
+            Название происходит от героя Нарцисса, который, согласно греческой мифологии, увидел в воде своё отражение, в которое влюбился, и не мог оторваться от созерцания своей красоты и умер.
+            После смерти был превращён богами в цветок нарцисс.
+            <br><br>
+            Черта характера нарциссизм характеризуется убежденностью в собственной уникальности, превосходстве над другими людьми.
+            Нарцисс ожидает восхищения окружающих для подтверждения своей уникальности и значимости.
+            К сожалению. такие люди склонны обесценивать практически всё окружающее их на свете, идеализируя при этом то, с чем ассоциируют самих себя.
+            <br><br>
+            Встречали ли вы в своей жизни нарциссов?
+        </p>           
     </main>
 
 
@@ -289,13 +273,13 @@
       
         <section class="blok6">
             <h3>Режим работы: пн-сб 8:00-20:00 </h3>
-            <p><a href="contract.html">Договор публичной оферты</a></p>
-            <p><a href="payment.html">Оплата</a></p>
+            <p><a href="../contract.html">Договор публичной оферты</a></p>
+            <p><a href="../payment.html">Оплата</a></p>
             
             <p>ИП Дудинская Валентина Геннадьевна, УНП 193143397</p>
             <p>Cвидетельство о регистрации №0702067, от 01.10.2018 (минский горисполком)</p>
     
-            <img src="images/logo.png" alt="Банковская карта" title="Payment systems"; style="cursor: pointer; padding-bottom: 40px;">
+            <img src="../images/logo.png" alt="Банковская карта" title="Payment systems"; style="cursor: pointer; padding-bottom: 40px;">
         </section>
       </footer>
 </body>
